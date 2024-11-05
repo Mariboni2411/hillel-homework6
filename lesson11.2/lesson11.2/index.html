@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <style>
+    #text {
+      font-size: 24px;
+      color: black; 
+    }
+  </style>
+</head>
+<body>
+  <div id="text"> змінює колір при натисканні на кнопку</div>
+  <button id="toggleColorButton">змінити колір</button>
+
+  <script>
+    const textElement = document.getElementById("text");
+    const button = document.getElementById("toggleColorButton");
+
+   
+    const initialColor = "black";
+    const alternateColor = "blue";
+
+    button.addEventListener("click", function() {
+
+      if (textElement.style.color === initialColor) {
+        textElement.style.color = alternateColor;
+      } else {
+        textElement.style.color = initialColor;
+      }
+    });
+  </script>
+</body>
+</html>
